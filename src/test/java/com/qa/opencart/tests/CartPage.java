@@ -1,5 +1,6 @@
 package com.qa.opencart.tests;
 
 public class CartPage {
-int i=10;
+static int i=10;
+
 }
