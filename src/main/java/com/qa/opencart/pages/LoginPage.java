@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import com.qa.opencart.utilities.AppConstants;
 import com.qa.opencart.utilities.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class LoginPage {
 	
 	private WebDriver driver;
@@ -41,7 +43,7 @@ public class LoginPage {
 		return eleUtil.waitForURLContainsAndCapture("route=account/login", AppConstants.SHORT_DEFAULT_WAIT);
 		
 	}
-	
+	@Step("getting footer links")
 	public boolean getForgotPasswordLink() {
 		return eleUtil.checkElementIsDisplayed(forgotPwdLink);
 	}
@@ -60,7 +62,7 @@ public class LoginPage {
 		String newCustomerlabelText=eleUtil.doGetElementText(newCustomerLabel);
 		return newCustomerlabelText;
 	}
-	
+	@Step("login with username {0} and passsword {1} ")
 	public AccountsPage doLogin(String email, String password) {
 		System.out.println("Entering email and password " +email +password);
 	eleUtil.waitForElementVisible(emailId, AppConstants.SHORT_DEFAULT_WAIT).sendKeys(email);
