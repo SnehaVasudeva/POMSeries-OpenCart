@@ -6,7 +6,7 @@ import java.util.List;
 public class AppConstants {
 	
 	public static final String LOGIN_PAGE_TITLE_VALUE ="Account Login";
-	public static final String ACCOUNT_PAGE_TITLE_VALUE ="My Account11";
+	public static final String ACCOUNT_PAGE_TITLE_VALUE ="My Account";
 	public static final String LOGIN_PAGE_URL_FRACTION_VALUE="route=account/login";
 	public static final String ACCOUNT_PAGE_URL_FULL_VALUE="https://naveenautomationlabs.com/opencart/index.php?route=account/account";
 	public static final int SHORT_DEFAULT_WAIT =5;
