@@ -36,13 +36,14 @@ public class LoginPageTest extends BaseTest {
 	@Description("checking login page title test...")
 	@Feature("title test")
 
-
 	@Test
 	public void loginTitleTest() {
 		String loginactTitle = loginPage.getLoginTitle();
 		Assert.assertEquals(loginactTitle, "Account Login");
 	}
-
+	@Severity(SeverityLevel.NORMAL)
+	@Description("checking login page logo test...")
+	@Feature("title test")
 	@Test
 	public void loginLogoTest() {
 		boolean logo = loginPage.getPageLogo();
